@@ -1,0 +1,43 @@
+{
+  "NEWRELIC_KEY": "6f72f8c8d5d1dfa2ae0899d208e5e1e135f8d9b8",
+  "LOG_CONFIG": {
+    "level": "info",
+    "silent": false,
+    "colorize": false,
+    "timestamp": true,
+    "maxsize": "100000000",
+    "datePattern": "-yyyy-MM-dd.log",
+    "json": true,
+    "prettyPrint": "true"
+  },
+  "LOG_FILE_CONFIG": {
+    "level": "info",
+    "silent": false,
+    "colorize": false,
+    "timestamp": true,
+    "maxsize": "100000000",
+    "datePattern": "-yyyy-MM-dd.log",
+    "json": true,
+    "prettyPrint": true
+  },
+  "INITIAL_ITEMS": {
+    "water": {
+      "quantity": 1,
+      "value": 4
+    },
+    "food": {
+      "quantity": 1,
+      "value": 3
+    },
+    "medication": {
+      "quantity": 1,
+      "value": 2
+    },
+    "ammunition": {
+      "quantity": 1,
+      "value": 1
+    }
+  },
+  "MONGO_URL": "mongodb://localhost:27017/zssn",
+  "MONGO_URL_TEST": "mongodb://localhost:27017/zssn_test"
+}

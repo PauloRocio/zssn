@@ -1,0 +1,17 @@
+{
+  "id": "locations",
+  "required": [
+    "latitude",
+    "longitude"
+  ],
+  "properties": {
+    "latitude": {
+      "type": "number",
+      "minLength": 1
+    },
+    "longitude": {
+      "type": "number",
+      "minLength": 1
+    }
+  }
+}

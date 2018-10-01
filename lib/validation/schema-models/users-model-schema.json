@@ -1,0 +1,89 @@
+{
+  "id": "users",
+  "required": [
+    "name",
+    "age",
+    "gender",
+    "location",
+    "items",
+    "isInfected",
+    "created"
+  ],
+  "properties": {
+    "location": {
+      "type": "object",
+      "required": [
+        "latitude",
+        "longitude"
+      ],
+      "properties": {
+        "latitude": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 15
+        },
+        "longitude": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 15
+        }
+      }
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "age": {
+      "type": "string",
+      "minLength": 1
+    },
+    "gender": {
+      "type": "string",
+      "minLength": 1
+    },
+    "items": {
+      "type": "array",
+      "required": [],
+      "properties": {
+        "water": {
+          "type": "object",
+          "properties": {
+            "quantity": {
+              "type": "integer"
+            }
+          }
+        },
+        "food": {
+          "type": "object",
+          "properties": {
+            "quantity": {
+              "type": "integer"
+            }
+          }
+        },
+        "medication": {
+          "type": "object",
+          "properties": {
+            "quantity": {
+              "type": "integer"
+            }
+          }
+        },
+        "ammunition": {
+          "type": "object",
+          "properties": {
+            "quantity": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    "isInfected": {
+      "type": "boolean"
+    },
+    "created": {
+      "type": "object"
+    }
+  }
+}

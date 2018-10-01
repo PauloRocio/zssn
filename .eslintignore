@@ -1,0 +1,11 @@
+.git/
+.gitignore
+.gitmodules
+.eslintrc
+.eslintignore
+
+conf/
+config/
+log/
+node_modules/
+coverage/

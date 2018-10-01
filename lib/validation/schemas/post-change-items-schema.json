@@ -1,0 +1,59 @@
+{
+  "id": "changeitems",
+  "required": [
+    "firstSurvivor",
+    "secondSurvivor"
+  ],
+  "properties": {
+    "firstSurvivor": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "itemsChange": {
+          "type": "array",
+          "items":{
+            "type": "object",
+            "required": ["nameItem", "quantity"],
+            "properties": {
+              "nameItem": {
+                "type": "string"
+              },
+              "quantity": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "secondSurvivor": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "itemsChange": {
+          "type": "array",
+          "items":{
+            "type": "object",
+            "required": ["nameItem", "quantity"],
+            "properties": {
+              "nameItem": {
+                "type": "string"
+              },
+              "quantity": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "infected",
+  "required": [
+    "survivorName",
+    "relateInfected"
+  ],
+  "properties": {
+    "survivorName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "relateInfected": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

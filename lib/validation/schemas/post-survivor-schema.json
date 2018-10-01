@@ -1,0 +1,42 @@
+{
+  "id": "survivors",
+  "required": [
+    "name",
+    "age",
+    "gender",
+    "location"
+  ],
+  "properties": {
+    "location": {
+      "type": "object",
+      "required": [
+        "latitude",
+        "longitude"
+      ],
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "minLength": 1,
+          "maxLength": 15
+        },
+        "longitude": {
+          "type": "number",
+          "minLength": 1,
+          "maxLength": 15
+        }
+      }
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "age": {
+      "type": "number",
+      "minLength": 1
+    },
+    "gender": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

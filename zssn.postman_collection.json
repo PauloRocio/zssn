@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "48205e1c-8b02-4da2-b288-bdb013ef9440",
+		"name": "zssn",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/reports",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"latitude\": \"1\",\n\t\"longitude\": 2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/reports",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"reports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/survivors",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\": \"Ze\",\n  \"age\": \"31\",\n  \"gender\": \"masculino\",\n  \"location\":{\n  \t\"latitude\": \"1234567890\",\n  \t\"longitude\": \"0987654321\"\n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/survivors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"survivors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/locations/paulo",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"latitude\": \"1\",\n\t\"longitude\": 2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/locations/paulo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"locations",
+						"paulo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/changeitems",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstSurvivor\": {\n    \"name\": \"Paulo\",\n    \"itemsChange\":[\n      {\n        \"nameItem\": \"water\",\n        \"quantity\": 1\n      }\n    ] \n  },\n  \"secondSurvivor\": {\n    \"name\": \"Xulispa\",\n    \"itemsChange\":[\n      {\n        \"nameItem\": \"medication\",\n        \"quantity\": 2\n      }\n    ] \n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/changeitems",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"changeitems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/infected",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"survivorName\": \"Paulo\",\n\t\"relateInfected\": \"Xulispa\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/infected",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"infected"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
